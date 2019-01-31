@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+
+  <title>WebGL Tp Note</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<script src='gl-matrix-min.js'></script>
+<script src='main.js'></script>
+
+<body onload='main()'>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4 text-center bg-light">
+
+        <hr>
+        <h5>Translation</h5>
+        <hr>
+
+        <p>Translation X</p>
+        <div class="col-sm-12 mb-3">
+          <input type="range" min="-10" max="10" step="0.1" id="TranslationX">
+        </div>
+
+        <p>Translation Y</p>
+        <div class="col-sm-12 mb-3">
+          <input type="range" min="-10" max="10" step="0.1" id="TranslationY">
+        </div>
+
+        <p>Translation Z</p>
+        <div class="col-sm-12 mb-3 pb-3">
+          <input type="range" min="-10" max="10" step="0.1" id="TranslationZ">
+        </div>
+
+        <hr>
+        <h5>Rotation</h5>
+        <hr>
+
+        <p>Rotation X</p>
+        <div class="col-sm-12 mb-3">
+          <input type="range" min="-3.14" max="3.14" step="0.01" id="RotationX">
+        </div>
+
+        <p>Rotation Y</p>
+        <div class="col-sm-12 mb-3">
+          <input type="range" min="-3.14" max="3.14" step="0.01" id="RotationY">
+        </div>
+
+        <p>Rotation Z</p>
+        <div class="col-sm-12 mb-3 pb-3">
+          <input type="range" min="-3.14" max="3.14" step="0.01" id="RotationZ">
+        </div>
+
+        <hr>
+        <h5>Camera</h5>
+        <hr>
+
+        <p>Zoom</p>
+        <div class="col-sm-12 mb-3">
+          <input type="range" min="0.1" max="5" step="0.1" value="1" id="Zoom">
+        </div>
+
+        <p>Champ de vision</p>
+        <div class="col-sm-12 mb-3">
+          <input type="range" min="30" max="120" step="1" id="FOV">
+        </div>
+
+      </div>
+
+      <canvas class="col-8 w-100" id='3dcube'></canvas>
+
+    </div>
+  </div>
+</body>
+
+</html>
